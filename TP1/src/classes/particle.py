@@ -1,14 +1,10 @@
-class particle(object):
-    def __init__(self, x, y, radium):
-        self.x = x
-        self.y = y
+class Particle(object):
+    def __init__(self, position, radium):
+        self.position = position
         self.radium = radium
 
-    def getX(self):
-        return self.x
-
-    def getY(self):
-        return self.y
+    def get_position(self):
+        return self.position
 
     def __str__(self):
-        return "PARTICLE: (" + str(self.x) + ", " + str(self.y) + " radium: " + str(self.radium) + "\n"
+        return "PARTICLE: " + str(self.get_position()) + " radium: " + str(self.radium) + "\n"

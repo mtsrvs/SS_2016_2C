@@ -1,4 +1,5 @@
 from random import randint
+from classes.position import Position
 
 def parse_static(file):
     values = []
@@ -32,10 +33,10 @@ def parse_dynamic(file):
     while len(lines) > i:
 
         line = lines[i].replace('\n','')
-        line.split('\t',2)
+        line = line.split('\t',2)
 
         if i > 0:
-            positions.append(float(line))
+            positions.append(Position(int(line[0]), int(line[1])))
 
         i += 1
 
