@@ -13,11 +13,11 @@ import org.jfree.ui.ApplicationFrame;
 import tp1.classes.Particle;
 
 @SuppressWarnings("serial")
-public class TwoDGraphic extends ApplicationFrame {
+public class Graphic2D extends ApplicationFrame {
 
     private float[][] data;
 
-    public TwoDGraphic(final String title, List<Particle> listParticle) {
+    public Graphic2D(final String title, List<Particle> listParticle) {
 
         super(title);
         

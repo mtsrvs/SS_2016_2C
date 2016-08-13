@@ -7,7 +7,7 @@ import org.jfree.ui.RefineryUtilities;
 import tp1.classes.Cell;
 import tp1.classes.Particle;
 import tp1.classes.Position;
-import tp1.plot.TwoDGraphic;
+import tp1.plot.Graphic2D;
 import tp1.utils.FileGenerator;
 import tp1.utils.ParticlesGenerator;
 import tp1.utils.PositionGenerator;
@@ -18,8 +18,11 @@ public class Main {
 	/*
 	 * Parametros de entrada
 	 * 
-	 * n = cantidad de particulas l = largo rc = radio de cercania r = radio de
-	 * las particulas m = cantidad de celdas en filas/columnas
+	 * n = cantidad de particulas 
+	 * l = largo 
+	 * rc = radio de cercania 
+	 * r = radio de las particulas 
+	 * m = cantidad de celdas en filas/columnas
 	 */
 	public static void main(String args[]) {
 		int n = 0;
@@ -64,7 +67,7 @@ public class Main {
 			matrix[row][col].addParticle(p);
 		}
 
-        final TwoDGraphic demo = new TwoDGraphic("PARTICULAS!", listParticle);
+        final Graphic2D demo = new Graphic2D("PARTICULAS!", listParticle);
         demo.pack();
         RefineryUtilities.centerFrameOnScreen(demo);
         demo.setVisible(true);
