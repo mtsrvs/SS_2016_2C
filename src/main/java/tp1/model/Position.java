@@ -1,4 +1,4 @@
-package tp1.classes;
+package tp1.model;
 
 public class Position {
 

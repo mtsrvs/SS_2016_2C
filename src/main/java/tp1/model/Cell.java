@@ -1,4 +1,4 @@
-package tp1.classes;
+package tp1.model;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -10,7 +10,7 @@ import org.jfree.chart.plot.FastScatterPlot;
 import org.jfree.chart.plot.XYPlot;
 import org.jfree.ui.ApplicationFrame;
 
-import tp1.classes.Particle;
+import tp1.model.Particle;
 
 @SuppressWarnings("serial")
 public class Graphic2D extends ApplicationFrame {

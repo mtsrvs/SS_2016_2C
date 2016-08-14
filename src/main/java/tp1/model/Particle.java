@@ -1,14 +1,20 @@
-package tp1.classes;
+package tp1.model;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Particle {
 
 	private Position position;
 	private float radius;
+	private List<Particle> neigborhood;
+	
 	//TODO deberia agregar como una lista que refiera a las particular vecinas...
 	
 	public Particle(Position position, float radius) {
 		this.position = position;
 		this.radius = radius;
+		this.neigborhood = new ArrayList<Particle>();
 	}
 
 	public Position getPosition() {
@@ -29,5 +35,13 @@ public class Particle {
 	
 	public String toString() {
 		return "[PARTICLE position:"+ this.position + " radius:"+this.radius+"]"; 
+	}
+
+	public List<Particle> getNeigborhood() {
+		return neigborhood;
+	}
+
+	public void addNeigborhood(Particle p) {
+		this.neigborhood.add(p);
 	}
 }

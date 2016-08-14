@@ -5,7 +5,7 @@ import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
 import java.util.List;
 
-import tp1.classes.Particle;
+import tp1.model.Particle;
 
 public class FileGenerator {
 

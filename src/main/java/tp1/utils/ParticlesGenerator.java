@@ -3,8 +3,8 @@ package tp1.utils;
 import java.util.ArrayList;
 import java.util.List;
 
-import tp1.classes.Particle;
-import tp1.classes.Position;
+import tp1.model.Particle;
+import tp1.model.Position;
 
 public class ParticlesGenerator {
 
